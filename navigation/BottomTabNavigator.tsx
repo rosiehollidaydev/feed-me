@@ -7,6 +7,7 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import AccountScreen from '../screens/AccountScreen';
 import FeedScreen from '../screens/FeedScreen';
+import SearchScreen from '../screens/SearchScreen';
 import { BottomTabParamList, TabOneParamList, TabTwoParamList, TabThreeParamList } from '../types';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
@@ -85,9 +86,9 @@ function TabThreeNavigator() {
   return (
     <TabThreeStack.Navigator>
       <TabThreeStack.Screen
-        name="FeedScreen"
-        component={FeedScreen}
-        options={{ headerTitle: 'Feed' }}
+        name="SearchScreen"
+        component={SearchScreen}
+        options={{ headerTitle: 'Search' }}
       />
     </TabThreeStack.Navigator>
   );
